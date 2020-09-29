@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Music.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">music</a>
+        <a class="navbar-brand" href="#">home page</a>
+        <a class="navbar-brand" href="#">about</a>
+        <a class="navbar-brand" href="#">Musical Instruments</a>
+        <a class="navbar-brand" href="#">my details </a>
+        <a class="navbar-brand" href="#">my orders </a>
+        <a class="navbar-brand" href="#">my details </a>
+        <a class="navbar-brand" href="#">Menejment </a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <h1 class="title">Search</h1>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Type of musical instrument
+                            </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick="choosetheType('exhalation')">Wind</a>
+                            <a class="dropdown-item" href="#" onclick="choosetheType('chord')">chord</a>
+                            <a class="dropdown-item" href="#" onclick="showall()">all</a>
+                        </div>
+                        <input id="search" class="form-control mr-sm-2" type="search musical instrument" placeholder="Search " aria-label="Search" onkeyup="Searching()">
+                        <h1 class="title">Price:</h1>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="filtering()">
+                            <label class="form-check-label" for="exampleCheck1">until 500 ILS</label><br>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">500-1000 ILS</label><br>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">1000-1500 ILS</label><br>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">1500-2000 ILS</label><br>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">2000+ ILS</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Musiarray.js"></script>
+</body>
+
+</html>
